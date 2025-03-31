@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
+    <title>연습04</title>
+    <style>
+        * {
+            font-family: "Winky Sans", "Single Day", sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 600px;
+            margin: 0px auto;
+        }
+
+        td {
+            border: 1px solid gray;
+            padding:5px;
+        }
+
+        .title {
+            text-align: center;
+            background-color: green;
+            color: white;
+        }
+
+        input[type="text"], input[type="password"]{
+            border: 1px solid gray;
+        }
+
+        input:focus {
+            outline:none;
+            border: 1px solid red;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .buttons {
+            text-align: center;
+            margin: 10px 0px;
+        }
+
+        button {
+            background-color: green;
+            color: white;
+            border: none;
+            padding: 5px 20px;
+            border-radius: 5px;
+            margin: 0px 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>회원가입</h1>
+    <form>
+        <table>
+            <tr>
+                <td class="title">아이디</td>
+                <td><input type="text" name="id"></td>
+            </tr>
+            <tr>
+                <td class="title">비밀번호</td>
+                <td><input type="password" name="pass"></td>
+            </tr>
+            <tr>
+                <td class="title">이름</td>
+                <td><input type="text" name="name" disabled></td>
+            </tr>
+            <tr>
+                <td class="title">성별</td>
+                <td>
+                    <input type="radio" name="gender" checked value="M">남
+                    <input type="radio" name="gender" value="F">여
+                </td>
+            </tr>
+            <tr>
+                <td class="title">취미</td>
+                <td>
+                    <input type="checkbox" name="hobby1" value="game">게임
+                    <input type="checkbox" name="hobby2" value="book">독서
+                    <input type="checkbox" name="hobby3" value="movie">영화감상
+                </td>
+            </tr>
+            <tr>
+                <td class="title">직업</td>
+                <td>
+                    <select name="job">
+                        <option>군인</option>
+                        <option>프로그래머</option>
+                        <option selected>크리에이터</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="title">사진</td>
+                <td><input type="file" name="photo"></td>
+            </tr>
+        </table>
+        <div class="buttons">
+            <button type="reset">취소</button>
+            <button type="submit">등록</button>
+        </div>
+    </form>
+</body>
+</html>

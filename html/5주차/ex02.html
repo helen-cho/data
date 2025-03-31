@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습02</title>
+    <style>
+        /*속성 선택자*/
+        input[type='text'], input[type='password'] {
+            background-color: #EEEEEE;
+        }
+
+        /*상태 선택자*/
+        input:disabled {
+            background-color: cyan;
+        }
+
+        input:focus {
+            background-color: white;
+        }
+
+        /*구조 선택자*/
+        table tr:first-child{
+            color: red;
+        }
+
+        table tr:last-child {
+            color: orange;
+        }
+
+        table td:nth-child(2n) {
+            background-color: #EEEEEE;
+        }
+
+        table td:nth-child(2n+1) {
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>회원가입</h1>
+    <form>
+        <table border="1" width="500">
+            <tr>
+                <td>아이디</td>
+                <td><input type="text" name="id"></td>
+            </tr>
+            <tr>
+                <td>비밀번호</td>
+                <td><input type="password" name="pass"></td>
+            </tr>
+            <tr>
+                <td>이름</td>
+                <td><input type="text" name="name" disabled></td>
+            </tr>
+            <tr>
+                <td>성별</td>
+                <td>
+                    <input type="radio" name="gender" checked value="M">남
+                    <input type="radio" name="gender" value="F">여
+                </td>
+            </tr>
+            <tr>
+                <td>취미</td>
+                <td>
+                    <input type="checkbox" name="hobby1" value="game">게임
+                    <input type="checkbox" name="hobby2" value="book">독서
+                    <input type="checkbox" name="hobby3" value="movie">영화감상
+                </td>
+            </tr>
+            <tr>
+                <td>직업</td>
+                <td>
+                    <select name="job">
+                        <option>군인</option>
+                        <option>프로그래머</option>
+                        <option selected>크리에이터</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>사진</td>
+                <td><input type="file" name="photo"></td>
+            </tr>
+        </table>
+        <div>
+            <button type="reset">취소</button>
+            <button type="submit">등록</button>
+        </div>
+    </form>
+</body>
+</html>
