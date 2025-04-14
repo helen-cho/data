@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
+    <title>연습02</title>
+    <style>
+        * {
+            font-family: "Winky Sans", "Single Day", sans-serif;
+        }
+
+        body {
+            width: 960px;
+            margin:0px auto;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            margin: 0px auto;
+        }
+
+        td {
+            border: 1px solid gray;
+            padding: 5px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .buttons {
+            width: 500px;
+            margin: 0px auto;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .title {
+            background-color: #EEEEEE;
+            text-align: center;
+        }
+
+        #tbl tr:nth-child(2n) {
+            background-color: pink;
+        }
+
+        table .row:hover, #tbl tr:nth-child(2n):hover {
+            background-color: #EEEEEE;
+            cursor: pointer;
+        }
+
+        input:focus {
+            outline: none;
+            border: 1px solid red;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>학생관리</h1>
+    <form>
+        <table>
+            <tr>
+                <td class="title">학번</td>
+                <td><input placeholder="학번"></td>
+            </tr>
+            <tr>
+                <td class="title">이름</td>
+                <td><input placeholder="이름"></td>
+            </tr>
+            <tr>
+                <td class="title">학과</td>
+                <td>
+                    <select>
+                        <option>스마트IT학과</option>
+                    </select>
+                </td>
+                <tr>
+                    <td class="title">학년</td>
+                    <td>
+                        <input type="radio" name="year" checked>1학년
+                        <input type="radio" name="year">2학년
+                        <input type="radio" name="year">3학년
+                    </td>
+                </tr>
+                <tr>
+                    <td class="title">생년월일</td>
+                    <td><input type="date" value="2006-01-01"></td>
+                </tr>
+            </tr>
+        </table>
+        <div class="buttons">
+            <button>등록</button>
+            <button type="reset">취소</button>
+        </div>
+    </form>
+
+    <table style="margin-top:50px;" id="tbl">
+        <tr class="title">
+            <td>학번</td><td>이름</td><td>학과</td><td>학년</td><td>생년월일</td>
+        </tr>
+        <tr class="row">
+            <td>학번</td><td>이름</td><td>학과</td><td>학년</td><td>생년월일</td>
+        </tr>
+        <tr class="row">
+            <td>학번</td><td>이름</td><td>학과</td><td>학년</td><td>생년월일</td>
+        </tr>
+        <tr class="row">
+            <td>학번</td><td>이름</td><td>학과</td><td>학년</td><td>생년월일</td>
+        </tr>
+        <tr class="row">
+            <td>학번</td><td>이름</td><td>학과</td><td>학년</td><td>생년월일</td>
+        </tr>
+    </table>
+</body>
+</html>
