@@ -38,7 +38,7 @@
         .then(json =>{
             console.log(json);
             last = Math.ceil(json.length / size);
-            let html='<table width=800>'
+            let html='<table width=600>'
             html += '<tr>';
             html += '<td>ID</td><td>Title</td>';
             html += '</tr>'
@@ -55,18 +55,12 @@
 
             $("#page").html(`${page} / ${last}`);
             
-            if(page==1) {
-                $("#prev").attr("disabled", true);
-            }else {
-                $("#prev").attr("disabled", false);
-            }
-
-            if(page==last) {
-                $("#next").attr("disabled", true);
-            }else {
-                $("#next").attr("disabled", false);
-            }
-        })
+            if(page==1) $("#prev").attr("disabled", true);
+            else $("#prev").attr("disabled", false);
+            
+            if(page==last) $("#next").attr("disabled", true);
+            else $("#next").attr("disabled", false);
+        });
     }
 </script>
 </html>

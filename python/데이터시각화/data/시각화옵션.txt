@@ -1,0 +1,39 @@
+축
+plt.title('그래프제목')
+plt.xlabel('X축', color='red')
+plt.yticks([2, 4, 6, 8])
+
+범례
+plt.plot(year, height, label='년도별 신장')
+plt.legend(loc=(1, 1))
+plt.legend(loc='upper right')
+plt.legend(loc='lower right')
+
+
+스타일
+plt.plot(year, height, marker='o') v, X, s
+plt.plot(year, height, markersize=10)
+plt.plot(year, height, markeredgecolor='red')
+plt.plot(year, height, markeredgewidth=2)
+plt.plot(year, height, markerfacecolor='yellow')
+
+plt.plot(year, height, linewidth=3)
+plt.plot(year, height, linestyle='') - / -. / : / -- 
+plt.plot(year, height, color='pink') #FF0000
+
+plot.plot(year, height, 'ro--')
+
+단축어
+markersize = ms
+markeredgecolor = mec
+markeredgewidth = mew
+markerfacecolor = mfc
+
+linestyle = ls
+linewidth = lw
+color = c
+
+그래프 크기
+plt.figure(figsize=(10, 5)) (넓이, 높이)
+
+
