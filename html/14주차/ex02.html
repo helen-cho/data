@@ -13,7 +13,7 @@
     <div class="container">
         <h1 class="text-center my-5">Post List</h1>
         <div id="todos"></div>
-        <div style="text-center">
+        <div style="text-center;">
             <button class="btn btn-primary" id="prev">이전</button>
             <span id="page" class="px-3">1</span>
             <button class="btn btn-primary" id="next">다음</button>
@@ -46,9 +46,9 @@
             html += '<tr>';
             html += '<td>ID</td><td>Title</td>';
             html += '</tr>'
-            const start = (page-1) * size + 1;
-            const end = (page * size) + 1;    
-            for(i=start-1; i<end-1; i++){
+            const start = (page-1) * size;
+            const end = (page * size);    
+            for(i=start; i<end; i++){
                 const data = json[i];
                 html += '<tr>';
                 html += `<td>${data.id}</td><td>${data.title}</td>`;

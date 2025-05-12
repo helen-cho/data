@@ -3,14 +3,5 @@
 
 * {
     font-family: "Nanum Myeongjo", serif;
-}
-
-table {
-    margin: 0px auto;
-    border-collapse: collapse;
-}
-
-td {
-    border: 1px solid gray;
-    padding: 5px;
+    text-align: center;
 }
