@@ -1,0 +1,129 @@
+<html lang="en">
+
+<head>
+    <title>동서가구</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        /*테이블을 선택한다.*/
+        table {
+            /*넓이를 800px로 지정한다.*/
+            width: 800px;
+            /*가운데 정렬한다.*/
+            margin: 0px auto;
+            /*border간격을 합친다.*/
+            border-collapse: collapse;
+            /*바깥 아래쪽 여백을 20px로 지정한다.*/
+            margin-bottom: 20px;
+        }
+
+        /*td 태그를 선택한다.*/
+        td {
+            /*border를 1px solid gray로 지정한다.*/
+            border: 1px solid gray;
+            /*상하 좌우 안쪽 여백을 5px로 지정한다.*/
+            padding: 5px;
+        }
+
+        /*row 클래스에 마우스를 올려 놓은경우를 선택한다.*/
+        .row:hover {
+            /*글꼴 두께를 bold체로 지정한다.*/
+            font-weight: bold;
+        }
+
+        /*테이블의 첫번째 행을 선택한다.*/
+        table tr:first-child {
+            /*글자를 가운데 정렬한다.*/
+            text-align: center;
+        }
+
+        /*테이블의 각 tr의 첫번째 td를 선택한다.*/
+        table tr td:first-child {
+            text-align: center;
+        }
+
+        /*테이블의 각 row클래스의 3번째 클래스를 선택한다.*/
+        table .row td:nth-child(3) {
+            /*넓이를 100px로 지정한다.*/
+            width: 100px;
+            /*글자를 가운데 정렬한다.*/
+            text-align: center;
+        }
+
+        /*테이블의 각 row클래스의 4번째 클래스를 선택한다.*/
+        table .row td:nth-child(4) {
+            /*넓이를 100px로 지정한다.*/
+            width: 120px;
+            /*글자를 가운데 정렬한다.*/
+            text-align: center;
+        }
+
+        /*테이블의 짝수행(0, 2, 4,...) row클래스를 선택한다.*/
+        table .row:nth-child(2n) {
+            /*배경색을 #EEEEEE로 지정한다.*/
+            background-color: #EEEEEE;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <h1>동서가구</h1>
+        <img src="home.jpg" width="100%">
+    </div>
+    <div id="menu">
+        <span class="item">
+            <a href="ex01.html">Home</a>
+        </span>
+        <span class="item">
+            <a href="ex02.html">게시글</a>
+        </span>
+        <span class="item">
+            <a href="ex03.html">회원가입</a>
+        </span>
+    </div>
+    <div id="contents">
+        <h1>게시글</h1>
+        <table>
+            <tr>
+                <td width="20">No.</td>
+                <td colspan="3">내용</td>
+            </tr>
+            <tr class="row">
+                <td>1</td>
+                <td>제목 행의 내용을 가운데 정렬</td>
+                <td>blue</td>
+                <td>2025-05-18</td>
+            </tr>
+            <tr class="row">
+                <td>2</td>
+                <td>No.칸 내용을 가운데 정렬</td>
+                <td>blue</td>
+                <td>2025-05-18</td>
+            </tr>
+            <tr class="row">
+                <td>3</td>
+                <td>작성자와 작성일 칸의 넓이를 100px로 지정후 내용물을 가운데 정렬</td>
+                <td>blue</td>
+                <td>2025-05-18</td>
+            </tr>
+            <tr class="row">
+                <td>4</td>
+                <td>내용의 홀수행의 배경색을 회색으로 변경</td>
+                <td>blue</td>
+                <td>2025-05-18</td>
+            </tr>
+            <tr class="row">
+                <td>5</td>
+                <td>마우스를 행에 올려 놓으면 글자 스타일을 bold로 변경</td>
+                <td>blue</td>
+                <td>2025-05-18</td>
+            </tr>
+        </table>
+    </div>
+    <div id="footer">
+        <hr>
+        <h5>Copyright 2025. 한양여대 홍길동 All rights reserved</h5>
+    </div>
+</body>
+
+</html>

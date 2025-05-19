@@ -1,0 +1,109 @@
+<html>
+<head>
+    <title>동서가구</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        /*form 태그를 선택한다.*/
+        form {
+            /*넓이를 800px로 지정한다.*/
+            width: 800px;
+            /*가운데 정렬한다. */
+            margin: 0px auto;
+            /*아래쪽 바깥 여백을 50px로 지정한다.*/
+            margin-bottom: 50px;
+            /*배경색을 #EEEEEE로 지정한다.*/
+            background-color: #EEEEEE;
+            /*상하 좌우 안쪽 여백을 30px로 지정한다.*/
+            padding: 30px;
+        }
+
+        /*input 태그의 text, password 타입을 선택한다.*/
+        input[type="text"], input[type="password"] {
+            outline: none;
+            width: 100%;
+            border: 1px solid gray;
+            padding: 5px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        /*input 태그에 포커스가 위치한 경우를 선택한다.*/
+        input:focus {
+            background-color: pink;
+        }
+
+        /*select 태그를 선택한다.*/
+        select {
+            /*넓이를 200px로 지정한다.*/
+            width: 200px;
+            /*상하 안쪽여백은 5px, 좌우 안쪽 여백은 0px로 지정한다.*/
+            padding: 5px 0px;
+        }
+
+        /*group 클래스를 선택한다.*/
+        .group {
+            /*상하 바깥쪽 여백은 20px, 좌우 안쪽 여백은 0px로 지정한다.*/
+            margin: 20px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <h1>동서가구</h1>
+        <img src="home.jpg" width="100%">
+    </div>
+    <div id="menu">
+        <span class="item">
+            <a href="ex01.html">Home</a>
+        </span>
+        <span class="item">
+            <a href="ex02.html">게시글</a>
+        </span>
+        <span class="item">
+            <a href="ex03.html">회원가입</a>
+        </span>
+    </div>
+    <div id="contents">
+        <h1>회원가입</h1>
+        <form>
+            <input type="text" placeholder="아이디">
+            <input type="password" placeholder="비밀번호">
+            <input type="text" placeholder="성명">
+            <div class="group">
+                <!--디폴트로 남을 선택한다.-->
+                <span>성별</span>
+                <input type="radio" name="gender" checked>남
+                <input type="radio" name="gender">여
+            </div>
+            <div class="group">
+                <!--디폴트로 운동선수를 선택한다.-->
+                <span>직업</span>
+                <select>
+                    <option>프로그래머</option>
+                    <option>의사</option>
+                    <option selected>운동선수</option>
+                    <option>변호사</option>
+                </select>
+            </div>
+            <div class="group">
+                <!--디폴트로 컴퓨터게임을 선택한다.-->
+                <span>취미</span>
+                <input type="checkbox" name="hobby1">운동
+                <input type="checkbox" name="hobby2" checked>컴퓨터게임
+                <input type="checkbox" name="hobby3">영화감상
+                <input type="checkbox" name="hobby4">여행
+            </div>
+            <div class="group" style="text-align: center;">
+                <button class="submit">회원가입</button>
+                <button class="reset">가입취소</button>
+            </div>
+        </form>
+    </div>
+    <div id="footer">
+        <hr>
+        <h5>Copyright 2025. 한양여대 홍길동 All rights reserved</h5>
+    </div>
+</body>
+
+</html>

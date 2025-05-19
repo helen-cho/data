@@ -1,31 +1,71 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>도서관리</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <link rel="stylesheet" href="style.css"/>
-</head>
-<body>
-    <h1>도서관리</h1>
-    <div id="products"></div>
-</body>
-<script>
-    const data = [
-        {id:"1", title:"요즘 교사를 위한 AI 수업 활용 가이드 with 2022 개정 교육과정",price:"18,000"},
-        {id:"2", title:"리얼 후쿠오카 2025~2026", price:"15,300"},
-        {id:"3", title:"주택청약의 모든 것(2025~2026년 최신 개정판)", price:"16,200"},
-        {id:"4", title:"멀티패러다임 프로그래밍", price:"34,200"},
-        {id:"5", title:"지옥 초등학교 4", price:"13,050"},
-    ];
 
-    let html="<table width=800>";
-    html += "<tr><td>ID</td><td>제목</td><td>가격</td></tr>";
-    for(i=0; i<data.length; i++) {
-        const row = data[i];
-        html += `<tr><td>${row.id}</td><td>${row.title}</td><td>${row.price}</td></tr>`;
-    }
-    $("#products").html(html);
-</script>
+<head>
+    <title>도서관리</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="header">
+        <h1>한빛미디어</h1>
+        <img src="home.jpg" />
+    </div>
+    <div id="menu">
+        <div class="item">
+            <a href="ex01.html">Home</a>
+        </div>
+        <div class="item">
+            <a href="ex02.html">회사소개</a>
+        </div>
+        <div class="item">
+            <a href="ex03.html">자료실</a>
+        </div>
+    </div>
+    <div id="contents">
+        <div class="col">
+            <img src="https://cdn-prod.hanbit.co.kr/thumbnails/C7822918754_cover.jpg" width="100%" />
+            <div>소란한 세상에서 나를 지키는 말습관</div>
+            <div>40,000원</div>
+        </div>
+        <div class="col">
+            <img src="https://cdn-prod.hanbit.co.kr/thumbnails/C7822918754_cover.jpg" width="100%" />
+            <div>소란한 세상에서 나를 지키는 말습관</div>
+            <div>40,000원</div>
+        </div>
+        <div class="col">
+            <img src="https://cdn-prod.hanbit.co.kr/thumbnails/C7822918754_cover.jpg" width="100%" />
+            <div>소란한 세상에서 나를 지키는 말습관</div>
+            <div>40,000원</div>
+        </div>
+        <div class="col">
+            <img src="https://cdn-prod.hanbit.co.kr/thumbnails/C7822918754_cover.jpg" width="100%" />
+            <div>소란한 세상에서 나를 지키는 말습관</div>
+            <div>40,000원</div>
+        </div>
+        <div class="col">
+            <img src="https://cdn-prod.hanbit.co.kr/thumbnails/C7822918754_cover.jpg" width="100%" />
+            <div>소란한 세상에서 나를 지키는 말습관</div>
+            <div>40,000원</div>
+        </div>
+        <div class="col">
+            <img src="https://cdn-prod.hanbit.co.kr/thumbnails/C7822918754_cover.jpg" width="100%" />
+            <div>소란한 세상에서 나를 지키는 말습관</div>
+            <div>40,000원</div>
+        </div>
+        <div class="col">
+            <img src="https://cdn-prod.hanbit.co.kr/thumbnails/C7822918754_cover.jpg" width="100%" />
+            <div>소란한 세상에서 나를 지키는 말습관</div>
+            <div>40,000원</div>
+        </div>
+        <div class="col">
+            <img src="https://cdn-prod.hanbit.co.kr/thumbnails/C7822918754_cover.jpg" width="100%" />
+            <div>소란한 세상에서 나를 지키는 말습관</div>
+            <div>40,000원</div>
+        </div>
+    </div>
+    <div id="footer">
+        <hr>
+        <h5>Copyright 2025. 한양여대 홍길동 All rights reserved.</h5>
+    </div>
+</body>
 </html>
