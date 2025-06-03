@@ -3,5 +3,13 @@
 
 * {
     font-family: "Nanum Myeongjo", serif;
-    text-align: center;
+}
+
+.price {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+form .title {
+    width:100px;
 }

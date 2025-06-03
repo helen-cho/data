@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <title>회원가입</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div id="header">
+            <img src="https://placehold.co/960x160" width="100%">
+        </div>
+        <div id="menu" class="row my-3">
+            <div class="col-2 col-lg-1">
+                <a href="ex01.html">Home</a>
+            </div>
+            <div class="col-2 col-lg-1">
+                <a href="ex02.html">게시글</a>
+            </div>
+            <div class="col-2 col-lg-1">
+                <a href="ex03.html">회원가입</a>
+            </div>
+        </div>
+        <hr>
+        <div id="contents" class="row justify-content-center my-5">
+            <div class="col-10 col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="text-center">회원가입</h3>
+                    </div>
+                    <form class="card-body">
+                        <div class="input-group mb-2">
+                            <div class="input-group-text title">아이디</div>
+                            <input class="form-control" type="text">
+                        </div>
+                        <div class="input-group mb-2">
+                            <div class="input-group-text title">비밀번호</div>
+                            <input class="form-control" type="password">
+                        </div>
+                        <div class="input-group mb-2">
+                            <div class="input-group-text title">이름</div>
+                            <input class="form-control" type="text">
+                        </div>
+                        <div class="input-group mb-2">
+                            <div class="input-group-text title">직업</div>
+                            <select class="form-select">
+                                <option>프로그래머</option>
+                                <option>변호사</option>
+                                <option>의사</option>
+                                <option>기타</option>
+                            </select>
+                        </div>
+                        <div class="mt-5">
+                            <div class="form-check-inline mb-2">
+                                <input type="radio" class="form-check-input" name="gender" checked>
+                                <label class="form-check-label">남</label>
+                            </div>
+                            <div class="form-check-inline mb-2">
+                                <input type="radio" class="form-check-input" name="gender">
+                                <label class="form-check-label">여</label>
+                            </div>
+                        </div>
+                        <div class="mt-3">
+                            <div class="form-check-inline mb-2">
+                                <input type="checkbox" class="form-check-input">
+                                <label class="form-check-label">컴퓨터게임</label>
+                            </div>
+                            <div class="form-check-inline mb-2">
+                                <input type="checkbox" class="form-check-input" checked>
+                                <label class="form-check-label">여행</label>
+                            </div>
+                            <div class="form-check-inline mb-2">
+                                <input type="checkbox" class="form-check-input">
+                                <label class="form-check-label">골프</label>
+                            </div>
+                            <div class="form-check-inline mb-2">
+                                <input type="checkbox" class="form-check-input">
+                                <label class="form-check-label">독서</label>
+                            </div>                            
+                        </div>
+                        <div class="text-center my-3">
+                            <button class="btn btn-primary px-5">가입</button>
+                            <button class="btn btn-secondary px-5">취소</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
