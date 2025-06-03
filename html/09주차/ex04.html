@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <h1>조건문</h1>
+    <div>
+        <button onclick="getDay();">오늘의 요일</button>
+    </div>
+    <div>
+        <button onClick="getDate();">오늘의 날짜</button>
+    </div>
+    <div>
+        <button onClick="getTime();">현재 시간</button>
+    </div>
+</body>
+<script>
+    let day = new Date().getDay();
+    day = 5;
+    function getDay() {
+        switch(day){
+            case 0:
+                alert("일요일");
+                break;
+            case 1:
+                alert("월요일");
+                break;
+            case 2:
+                alert("화요일");
+                break;
+            case 3: 
+                alert("수요일");
+                break;
+            case 4:
+                alert("목요일");
+                break;
+            case 5:
+                alert("금요일");
+                break;
+            case 6: 
+                alert("토요일");
+                break;
+            default: 
+                alert("잘못입력!");
+        }
+    }
+
+    function getDate() {
+        month = new Date().getMonth();
+        date = new Date().getDate();
+        alert(month+1 + "월" + date + "일");
+    }
+
+    function getTime() {
+        const hh = new Date().getHours();
+        const mm = new Date().getMonth();
+        const ss = new Date().getSeconds();
+        alert(`${hh}시 ${mm}분 ${ss}초`);
+    }
+
+    if(day == 0){
+        console.log("일요일");
+    }else if(day == 1){
+        console.log("월요일");
+    }else if(day == 2){
+        console.log("화요일");
+    }else if(day == 3){
+        console.log("수요일");
+    }else if(day == 4){
+        console.log("목요일");
+    }else if(day == 5){
+        console.log("금요일");
+    }else {
+        console.log("토요일");
+    }
+</script>
+</html>

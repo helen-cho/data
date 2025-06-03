@@ -1,0 +1,46 @@
+
+<html>
+<head>
+    <style>
+        /*h1 태그를 선택하여 글자색을 파랑으로 변경*/
+        h1 {
+            color:blue;
+        }
+
+        /**클래스명 title를 선택하여 배경색을 핑크로 변경*/
+        .title {
+            background-color: pink;
+        }
+
+        /*아이디 pass를 선택하여 배경색을 회색으로 변경*/
+        #pass {
+            background-color: gray;
+        }
+
+        button[type="reset"] {
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <h1>회원가입</h1>
+    <form>
+        <table>
+            <tr>
+                <td class="title">아이디</td>
+                <td><input id="id" type="text"></td>
+            </tr>
+            <tr>
+                <td class="title">비밀번호</td>
+                <td><input id="pass" type="password"></td>
+            </tr>
+            <tr>
+                <td class="title">성명</td>
+                <td><input id="name" type="text"></td>
+            </tr>
+        </table>
+        <button type="submit">가입</button>
+        <button type="reset">취소</button>
+    </form>
+</body>
+</html>

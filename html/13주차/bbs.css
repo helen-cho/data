@@ -1,0 +1,37 @@
+table {
+    width: 800px;
+    margin: 0px auto;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+td {
+    border: 1px solid gray;
+    padding: 5px;
+}
+
+.row:hover {
+    font-weight: bold;
+} 
+
+table tr:first-child{
+    text-align: center;
+}
+
+table tr td:first-child {
+    text-align: center;
+}
+
+table .row td:nth-child(3) {
+    width: 100px;
+    text-align: center;
+}
+
+table .row td:nth-child(4) {
+    width: 100px;
+    text-align: center;
+}
+
+table .row:nth-child(2n) {
+    background-color: #EEEEEE;
+}

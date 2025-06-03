@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연산자</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <h1>연산자</h1>
+    <div>
+        값1: <input id="num1" value="100">
+    </div>
+    <div>
+        값2: <input id="num2" value="200">
+    </div>
+    <div>
+        <button onClick="add();">더하기</button>
+        <button onClick="sub();">빼기</button>
+        <button onClick="multi();">곱하기</button>
+        <button onClick="div();">나누기</button>
+    </div>
+</body>
+<script>
+    function add(){
+        const num1 = parseInt($("#num1").val());
+        const num2 = parseInt($("#num2").val());
+        const result=num1 + num2;
+        alert(result)
+    }
+
+    function sub() {
+        const num1 = parseInt($("#num1").val());
+        const num2 = parseInt($("#num2").val());
+        const result=num1 - num2;
+        alert(result)
+    }
+
+    function multi() {
+
+    }
+
+    function div() {
+
+    }
+
+    //산술 연산자
+    console.log(100+200);
+    console.log(100-50);
+    console.log(100*50);
+    console.log(100/50);
+
+
+    //관계연산자
+    console.log(100>200);
+    console.log(100>=200);
+    console.log(100<200);
+    console.log(100<=200);
+    console.log(100==100);
+    console.log(100!=100);
+
+    //논리연산자
+    console.log(true && false);
+    console.log(true || false);
+    console.log(!true);
+
+    //
+    const gender = 'M';
+    const height = 165;
+
+    //성별(gender)이 'M'이고 키가 170이상인지 체크하는 수식이다.
+    let result = (gender == 'M') && (height >=170);
+    console.log(result);
+
+    result = (gender == 'M') || (height >=170);
+    console.log(result);
+</script>
+</script>
+</html>

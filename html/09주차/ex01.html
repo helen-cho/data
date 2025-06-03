@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>변수</title>
+</head>
+<body>
+    <h1 id="title">주소관리</h1>
+    <div>
+        이름: <input id="name" value="홍길동">
+    </div>
+    <div>
+        주소: <input id="address" value="인천 서구 경서동">
+    </div>
+    <div>
+        전화: <input id="phone" value="010-1010-2020">
+    </div>
+    <div>
+        <button  onClick="output();">출력</button>
+    </div>
+    <div id="output"></div>
+</body>
+<script>
+    function output() {
+        const name = $("#name").val();
+        const address = $("#address").val();
+        const phone = $("#phone").val();
+        //$("#output").html("이름:" + name + "<br>" + "주소:" + address + "<br>" + "전화:" + phone);
+        $("#output").html(`이름:${name}<br>주소:${address}<br>전화:${phone}`);
+        $("#output").show();
+    }
+
+    //자료형
+    console.log(273);
+    console.log('홍길동');
+    console.log(true);
+
+    //변수
+    const name = '홍길동';
+    console.log(name);
+    //name = '심청이'; 오류발생
+
+    let address = '인천';
+    address = '서울';
+    console.log(address);
+
+    const age = 20;
+    console.log(age);
+
+    document.getElementById("title").innerHTML = '산술연산자';
+    //document.querySelector("#title").innerHTML = '산술연산자';
+    //$("#title").html('산술연산자');
+</script>
+</html>

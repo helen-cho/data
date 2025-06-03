@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>조건문</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <h1>조건문</h1>
+    <div>
+        국어: <input id="kor" value="86">
+    </div>
+    <div>
+        영어: <input id="eng" value="90">
+    </div>
+    <div>
+        수학: <input id="mat" value="50">
+    </div>
+    <div>
+        <button onClick="result();">결과</button>
+    </div>
+    <hr>
+    <div id="output"></div>
+</body>
+<script>
+    //결과함수
+    function result(){
+        const kor = parseInt($("#kor").val());
+        const eng = parseInt($("#eng").val());
+        const mat = parseInt($("#mat").val());
+        const sum = kor + eng + mat;
+        const avg = (sum / 3).toFixed(2);
+        const rate = grade(avg);
+        //alert('합계:' + sum + "\n" + "평균:" + avg + "\n" + "평점:" + rate);
+        //alert(`합계:${sum}\n평균:${avg}\n평점:${rate}`);
+        $("#output").html(`합계:${sum}<br>평균:${avg}<br>평점:${rate}`)
+    };
+
+    //평점함수
+    function grade(avg) {
+        if (avg >= 90) {
+            return "A";
+        }else if (avg >=80){
+            return "B";
+        }else if (avg >= 70){
+            return "C";
+        }else if (avg >= 60){
+            return "D";
+        }else{
+            return "F";
+        }
+    }
+
+    const gender = 'M';
+
+    //if문
+    if (gender == 'M') {
+        console.log('남자입니다.');
+    }
+
+    //if~ else~ 문
+    if (gender == 'M') {
+        console.log('남자');
+    } else {
+        console.log('여자');
+    }
+
+    const avg = 80
+
+    //if~ else if~ else~문
+    if (avg >= 90) {
+        console.log('A');
+    } else if (avg >= 80) {
+        console.log('B');
+    } else if (avg >= 70) {
+        console.log('C');
+    } else if (avg >= 60) {
+        console.log('D');
+    } else {
+        console.log('F')
+    }
+
+    //중첩 if문
+    if (avg >= 90) {
+        if (avg >= 95) {
+            console.log('A+');
+        } else {
+            console.log('A0');
+        }
+    } else if (avg >= 80) {
+        if (avg >= 85) {
+            console.log('B+');
+        } else {
+            console.log('B0');
+        }
+    } else if (avg >= 70) {
+        if (avg >= 75) {
+            console.log('C+');
+        } else {
+            console.log('C0');
+        }
+    } else if (avg >= 60) {
+        if (avg >= 65) {
+            console.log('D+');
+        } else {
+            console.log('D0');
+        }
+    } else {
+        console.log('F')
+    }
+</script>
+</html>

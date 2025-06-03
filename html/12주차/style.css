@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
+
+/*전체를 선택한다.*/
+* {
+    /*글꼴을 지정한다.*/
+    font-family: "Single Day", cursive;
+}
+
+/*body 태그를 선택한다.*/
+body {
+    /*넓이를 960px로 지정한다.*/
+    width: 960px;
+
+    /*내용을 가운데 정렬한다. */
+    margin: 0px auto;
+}
+
+/*header 아이디를 선택한다.*/
+#header {
+    /*바깥 위아래 여백을 20px 좌우 여백을 0px로 지정한다.*/
+    margin: 20px 0px;
+}
+
+/*h1 태그를 선택한다.*/
+h1 {
+    /*글자를 가운데 정렬한다.*/
+    text-align: center;
+}
+
+/*menu 아이디를 선택한다.*/
+#menu {
+    /*바깥쪽 위아래 여백을 20px, 좌우 여백을 0px로 지정한다.*/
+    margin: 20px 0px;
+
+    /*item 클래스 내용이 넘치면 숨김으로 지정한다.*/
+    overflow: hidden;
+}
+
+/*menu 아이디의 item 클래스를 선택한다.*/
+#menu .item {
+    /*외곽선을 1px, solid gray로 지정한다.*/
+    border: 1px solid gray;
+
+
+    /*넓이를 80px로 지정한다.*/
+    width: 80px;
+
+    /*내용을 왼쪽 정렬한다.*/
+    float: left;
+
+    /*글자를 가운데 정렬한다.*/
+    text-align: center;
+
+    /*바깥쪽 왼쪽 여백을 10px로 지정한다.*/
+    margin-left: 10px;
+
+    /*안쪽 위아래 여백을 5px 좌우 여백을 20px 지정한다.*/
+    padding: 5px 20px;
+}
+
+/*item 클래스의 a 태그를 선택한다.*/
+.item a {
+    /*글자 모양의 밑줄을 없앤다.*/
+    text-decoration: none;
+
+    /*글자 색상을 초록으로 지정한다.*/
+    color: green;
+}
+
+/*item 클래스 a 태그위에에 마우스를 올려놓은 경우에 선택한다.*/
+.item a:hover {
+    /*글자 색상을 회색으로 지정한다.*/
+    color: gray;
+}
+
+/*contents 아이디를 선택한다.*/
+#contents {
+    /*col 클래스 내용이 넘치면 숨김으로 지정한다.*/
+    overflow: hidden;
+
+    /*바깥쪽 위아래 여백을 30px 좌우 여백을 0px로 지정한다.*/
+    margin: 30px 0px;
+}
+
+/*contents 아이디의 col 클래스를 선택한다.*/
+#contents .col {
+    /*넓이를 220px로 지정한다.*/
+    width: 220px;
+
+    /*내용을 왼쪽 정렬한다.*/
+    float: left;
+
+    /*바깥 위아래 여백을 opx 좌우 여백을 10px로 지정한다.*/
+    margin: 0px 10px;
+
+    /*바깥 아래쪽 여백을 30px로 지정한다.*/
+    margin-bottom: 30px;
+}
+
+/*footer 아이디를 선택한다.*/
+#footer {
+    /*글자를 가운데 정렬한다.*/
+    text-align: center;
+
+    /*바깥 아래쪽 여백을 50px로 지정한다.*/
+    margin-bottom: 50px;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습05</title>
+    <style>
+        /*구조 선택자*/
+        #table1 tr:first-child {
+            background-color: pink;
+            color:gray;
+        }
+
+        #table1 tr:last-child {
+            background-color: cyan;
+            color:white
+        }
+
+        #table1 tr:nth-child(3) {
+            background-color: green;
+            color:white;
+        }
+
+        #table2 tr:nth-child(2n) {
+            background-color: cyan;
+            color: white;
+        }
+
+        #table2 tr:nth-child(2n+1) {
+            background-color: green;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <table id="table1" border="1" width="800">
+        <tr>
+            <td>1.세계는 어른과 제도는 각 나를 믿다. </td>
+        </tr>
+        <tr>
+            <td>2.있은 나아질 내리다 크던, 따르면서, 업체에게 두말하다.</td>
+        </tr>
+        <tr>
+            <td>3.8명 수 지출은 대상을 대통령을 달아나다.</td>
+        </tr>
+        <tr>
+            <td>4.대한 대도시나 수입에 8,690,000원 삭제를 설치하다. </td>
+        </tr>
+        <tr>
+            <td>5.조직으로 바르도록 야당을 들어간 쌍무에 공장부터 적을, 확인하다.</td>
+        </tr>
+    </table>
+    <br>
+    <table id="table2" border="1" width="800">
+        <tr>
+            <td>1.세계는 어른과 제도는 각 나를 믿다. </td>
+        </tr>
+        <tr>
+            <td>2.있은 나아질 내리다 크던, 따르면서, 업체에게 두말하다.</td>
+        </tr>
+        <tr>
+            <td>3.8명 수 지출은 대상을 대통령을 달아나다.</td>
+        </tr>
+        <tr>
+            <td>4.대한 대도시나 수입에 8,690,000원 삭제를 설치하다. </td>
+        </tr>
+        <tr>
+            <td>5.조직으로 바르도록 야당을 들어간 쌍무에 공장부터 적을, 확인하다.</td>
+        </tr>
+    </table>
+</body>
+</html>

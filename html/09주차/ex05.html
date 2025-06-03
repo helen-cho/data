@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반복문(while)</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <h1>반복문(while)</h1>
+    <div id="result1"></div>
+    <div id="result2"></div>
+    <div id="result3"></div>
+</body>
+<script>
+    let i=0;
+    let sum = 0;
+
+    //1~100의 합계
+    while(i < 100){
+        i++; //i = i + 1;
+        sum +=i; //sum = sum + i;
+        //console.log(i)
+    }
+    console.log('1~100 합계:', sum);
+    $("#result1").html('1~100 합계=' + sum);
+
+    //1~100 짝수의 합계
+    i = 0;
+    sum = 0;
+    while(i < 100){
+        i = i + 2;
+        sum = sum + i
+    }
+    console.log('1~100 짝수 합계:', sum);
+    $("#result2").html('1~100 짝수 합계=' + sum);
+
+    //1~100 홀수의 합계
+    i=-1;
+    sum = 0;
+    while(i < 99) {
+        i = i + 2;
+        sum = sum + i;
+    }
+    console.log('1~100 홀수 합계:', sum);
+    $("#result3").html('1~100 홀수 합계=' + sum);
+</script>
+</html>

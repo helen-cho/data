@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <title>도서관리</title>
+    <link rel="stylesheet" href="style.css"/>
+    <style>
+        /* table 태그를 선택한다. */
+        table {
+            /*넓이를 800px로 지정한다.*/
+            width: 800px;
+
+            /*테이블의 border간격을 합친다.*/
+            border-collapse: collapse;
+
+            /*테이블을 가운데 정렬한다.*/
+            margin: 0px auto;
+        }
+
+        /* td 태그를 선택한다. */
+        td {
+            /*테두리 선의 굵기를 1px 모양을 점선 색을 그레이로 지정한다.*/
+            border : 1px dotted gray;
+
+            /*안쪽 위아래 좌우 여백을 10px로 지정한다.*/
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>한빛미디어</h1>
+        <img src="home.jpg" />
+    </div>
+    <div id="menu">
+        <div class="item">
+            <a href="ex01.html">Home</a>
+        </div>
+        <div class="item">
+            <a href="ex02.html">회사소개</a>
+        </div>
+        <div class="item">
+            <a href="ex03.html">자료실</a>
+        </div>
+    </div>
+    <div id="contents">
+        <h1>자료실</h1>
+        <table>
+            <tr>
+                <td rowspan="5">
+                    <img src="https://www.hanbit.co.kr/data/books/B7450409783_m.jpg" width="100"/>
+                </td>
+                <td>
+                    <h5>일잘러의 무기가 되는 엑셀 파워 쿼리</h5>
+                </td>
+            </tr>
+            <tr>
+                <td>방대한 실무 데이터를 자유자재로 다루는 강력한 파워 쿼리 기능을 한 권으로!</td>
+            </tr>
+            <tr>
+                <td>by 최준선</td>
+            </tr>
+            <tr>
+                <td>브랜드 : 한빛미디어</td>
+            </tr>
+            <tr>
+                <td>발행일 : 2025-05-19</td>
+            </tr>
+        </table>
+    </div>
+    <div id="footer">
+        <hr>
+        <h5>Copyright 2025. 한양여대 홍길동 All rights reserved.</h5>
+    </div>
+</body>
+</html>
